@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+table{border-collapse: collapse; box-shadow: 3px 3px 8px #888888;}
+th{background: #333; color: #FFF;}
+td,th{padding: 5px; width: 200px; outline: none; border: 1px solid #ccc;}
+tr:nth-child(odd){background: #ddd;}
+
+tr.active {
+    background: #85ca85;
+}
+
+.last_id {
+    animation: last-id 1000ms ease-in-out forwards;
+}
+
+@keyframes last-id {
+    0% {
+        background: #85ca85;
+    }
+    50% {
+        background: #85ca85;
+        color: green;
+        font-weight: bold;
+    }
+}
