@@ -46,6 +46,7 @@ $(document).ready(function(){
     $(document).on('click', '.editable', function(){
         //Vajag removeClass('last_id') , ja tāda ir?
         $(this).closest('tr').addClass("active");
+        // Vajag removeClass('last_id') no iepriekšējās rindas, kur bija ieklikšķināts?
     })
 
     $(document).on('focusout', '.editable', function() {
